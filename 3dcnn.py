@@ -219,10 +219,10 @@ def main():
     
     if not os.path.isdir(args.output):
         os.makedirs(args.output)
-    with open(os.path.join(args.output, 'ucf101_3dcnnmodel.json'), 'w') as json_file:
+    with open(os.path.join(args.output, 'ucf50_3dcnnmodel.json'), 'w') as json_file:
         json_file.write(model_json)
     
-    model.save_weights(os.path.join(args.output, 'ucf101_3dcnnmodel.hd5'))
+    model.save_weights(os.path.join(args.output, 'ucf50_3dcnnmodel.hd5'))
 
     #model evaluation
 
